@@ -31,10 +31,11 @@ int main(void)
 				{
 					putchar('0' + d);
 					putchar('0' + c);
-															if (c + d != 17)
-															{
+
+					if (c + d != 17)
+					{
 						putchar(',');
-						putchar(' ');
+	 					putchar(' ');
 					}
 				}
 				c++;
