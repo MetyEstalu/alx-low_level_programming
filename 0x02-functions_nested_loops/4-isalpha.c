@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints numbers
- * Return:0
+ * _isalpha - checks letter
+ * @c: caracter recibo por main.
+ * Return: 1 if c is lowercase
  */
-
-void print_most_numbers(void)
+int _isalpha(int c)
 {
-	char n = 0;
-
-	while (n <= 9)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
-		if (n != 2 && n != 4)
-		{
-			_putchar('0' + n);
-		}
-		n++;
+		return (1);
 	}
-	_putchar('\n');
+	else
+	{
+		return (0);
+	}
 }

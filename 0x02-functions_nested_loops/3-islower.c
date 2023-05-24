@@ -1,17 +1,18 @@
 #include "main.h"
 
 /**
- * print_numbers - prints numbers
- * Return:0
+ * _islower - checks for lowercase character.
+ * @c: caracter recibo por main.
+ * Return: 1 if c is lowercase
  */
-
-void print_numbers(void)
+int _islower(int c)
 {
-	char n = 0;
-	while (n <= 9)
+	if (c >= 'a' && c <= 'z')
 	{
-		_putchar('0' + n);
-		n++;
+		return (1);
 	}
-	_putchar('\n');
+	else
+	{
+		return (0);
+	}
 }
